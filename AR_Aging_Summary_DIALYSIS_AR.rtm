@@ -1,0 +1,2057 @@
+object TppReport
+  AutoStop = False
+  DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'A/R Aging Summary- Category'
+  PrinterSetup.Duplex = dpNone
+  PrinterSetup.PaperName = 'Letter'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 12700
+  PrinterSetup.mmMarginLeft = 12700
+  PrinterSetup.mmMarginRight = 12700
+  PrinterSetup.mmMarginTop = 12700
+  PrinterSetup.mmPaperHeight = 279401
+  PrinterSetup.mmPaperWidth = 215900
+  PrinterSetup.PaperSize = 1
+  Template.DatabaseSettings.Name = 'A/R Aging Summary- Category'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 'C:\Users\USER\Downloads\summary category.rtm'
+  Template.Format = ftASCII
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  ModalPreview = False
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  ThumbnailSettings.PageHighlight.Width = 3
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.AllowExtract = True
+  PDFSettings.EncryptSettings.AllowAssemble = True
+  PDFSettings.EncryptSettings.AllowQualityPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.EncryptSettings.EncryptionType = etRC4
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PDFSettings.PDFAFormat = pafNone
+  PreviewFormSettings.PageBorder.mmPadding = 0
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<FindText>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  XLSSettings.WorksheetName = 'Report'
+  Version = '19.04'
+  mmColumnWidth = 203200
+  DataPipelineName = 'qryArAgingMedicalDialysis'
+  object ppTitleBand1: TppTitleBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 15081
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'CompanyName'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'CompanyName'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 15240256
+      Font.Name = 'Trebuchet MS'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 6085
+      mmLeft = 92075
+      mmTop = 0
+      mmWidth = 34131
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppMemo2: TppMemo
+      DesignLayer = ppDesignLayer1
+      UserName = 'CompanyAddress'
+      KeepTogether = True
+      Anchors = [atTop, atRight]
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'CompanyAddress'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 15240256
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      Lines.Strings = (
+        
+          'Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of ' +
+          'General Santos City, South Cotabato Philippines')
+      RemoveEmptyLines = False
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 6615
+      mmLeft = 128059
+      mmTop = 0
+      mmWidth = 62442
+      BandType = 1
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppLine19: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'HeaderBar'
+      Border.Color = 13061907
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Pen.Color = 13061907
+      Pen.Width = 2
+      Weight = 1.5000000000000000
+      mmHeight = 1852
+      mmLeft = 57945
+      mmTop = 7408
+      mmWidth = 132555
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel19: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'CompanyContactInfo'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 
+        'support@activesystems.com '#8226' Phone 123 456 7890 '#8226' Mobile 123 456 ' +
+        '7890 '#8226' Fax 123 456 7890'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsUnderline]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 2910
+      mmLeft = 87048
+      mmTop = 9525
+      mmWidth = 103717
+      BandType = 1
+      LayerName = Foreground
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 29633
+    mmPrintPosition = 0
+    object ppLabel10: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label10'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Customer / Category'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 2117
+      mmTop = 24077
+      mmWidth = 13494
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine2: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line2'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 794
+      mmTop = 28310
+      mmWidth = 48154
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel6: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label6'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Total'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 178594
+      mmTop = 24077
+      mmWidth = 11113
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine6: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line6'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 167217
+      mmTop = 28310
+      mmWidth = 22490
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel11: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'DateRangeLabel'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'January through December 2005'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 10
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 0
+      mmTop = 14552
+      mmWidth = 51329
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel21: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'ReportTitle'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'DIALYSIS A/R Aging Summary'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Verdana'
+      Font.Size = 14
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 5948
+      mmLeft = 0
+      mmTop = 2910
+      mmWidth = 50546
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel2: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label101'
+      HyperlinkEnabled = False
+      Save = True
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Current'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 61383
+      mmTop = 25135
+      mmWidth = 10848
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine1: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line1'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 50800
+      mmTop = 28310
+      mmWidth = 21431
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel3: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label3'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = '1 - 30'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 87048
+      mmTop = 24077
+      mmWidth = 8202
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine3: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line3'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 74083
+      mmTop = 28310
+      mmWidth = 21431
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel4: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label4'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = '31 - 60'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 108744
+      mmTop = 24077
+      mmWidth = 10054
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine4: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line4'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 97367
+      mmTop = 28310
+      mmWidth = 21431
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel7: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label7'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = '61 - 90'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 132027
+      mmTop = 24077
+      mmWidth = 10054
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine5: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line5'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 120650
+      mmTop = 28310
+      mmWidth = 21431
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel8: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label8'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Over 90'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 154252
+      mmTop = 24077
+      mmWidth = 11113
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine7: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line7'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 143934
+      mmTop = 28310
+      mmWidth = 21431
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppVariable9: TppVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'SubTitle'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 0
+      CalcType = veReportStart
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 9260
+      mmWidth = 15875
+      BandType = 0
+      LayerName = Foreground
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 26723
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText1'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_CURRENT'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 50800
+      mmTop = 6085
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText2: TppDBText
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText2'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_1_30'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 74083
+      mmTop = 6085
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText3: TppDBText
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText3'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_31_60'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 97367
+      mmTop = 6085
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText4: TppDBText
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText4'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_61_90'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 120650
+      mmTop = 6085
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText5: TppDBText
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText5'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_OVER_90'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 143934
+      mmTop = 6085
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppVariable1: TppVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'Amount'
+      HyperlinkEnabled = False
+      AutoSize = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 0
+      DataType = dtDouble
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 167482
+      mmTop = 15875
+      mmWidth = 22490
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabelMedicalRow: TppLabel
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'LabelMedicalRow'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'MEDICAL'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 2117
+      mmTop = 6085
+      mmWidth = 11641
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabelDialysisRow: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'LabelDialysisRow'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'DIALYSIS'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3439
+      mmLeft = 2117
+      mmTop = 11113
+      mmWidth = 11906
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText6: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText6'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_CURRENT'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 50800
+      mmTop = 11113
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText7: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText7'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_1_30'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 74083
+      mmTop = 11113
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText8: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText8'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_31_60'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 97367
+      mmTop = 11113
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText9: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText9'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_61_90'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 120650
+      mmTop = 11113
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText10: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText10'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_OVER_90'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 143934
+      mmTop = 11113
+      mmWidth = 21431
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText11: TppDBText
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText11'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_TOTAL'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 167217
+      mmTop = 6085
+      mmWidth = 22490
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText12: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText12'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_TOTAL'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 167217
+      mmTop = 11113
+      mmWidth = 22490
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLine14: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line14'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 2117
+      mmTop = 21431
+      mmWidth = 187590
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLabel9: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'LabelDialysisRow1'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'TOTAL'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 2117
+      mmTop = 15875
+      mmWidth = 9525
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText13: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText13'
+      Border.mmPadding = 0
+      DataField = 'CUSTOMER_NAME'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 4498
+      mmLeft = 2117
+      mmTop = 1323
+      mmWidth = 47015
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 5027
+    mmPrintPosition = 0
+    object ppSystemVariable1: TppSystemVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'PrintTimestamp'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3831
+      mmLeft = 1058
+      mmTop = 529
+      mmWidth = 33570
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppSystemVariable2: TppSystemVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'PrintPageCount'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      VarType = vtPageSetDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3831
+      mmLeft = 173663
+      mmTop = 529
+      mmWidth = 16044
+      BandType = 8
+      LayerName = Foreground
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 14500
+    mmPrintPosition = 0
+    object ppLabel5: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label1'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'GRAND TOTAL A/R'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 0
+      mmTop = 11000
+      mmWidth = 8996
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppVariable4: TppVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'TotalBalance'
+      HyperlinkEnabled = False
+      AutoSize = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 0
+      DataType = dtDouble
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 167217
+      mmTop = 11000
+      mmWidth = 22490
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppLine8: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line8'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Style = lsDouble
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 167217
+      mmTop = 1588
+      mmWidth = 22490
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppLine9: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line9'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 50800
+      mmTop = 1588
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppLine10: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line10'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 74083
+      mmTop = 1588
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppLine11: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line11'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 97367
+      mmTop = 1588
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppLine12: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line12'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 120650
+      mmTop = 1588
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppLine13: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line13'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 143934
+      mmTop = 1588
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc1: TppDBCalc
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc1'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_CURRENT'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 50800
+      mmTop = 3440
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc2: TppDBCalc
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc2'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_1_30'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 74083
+      mmTop = 3175
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc3: TppDBCalc
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc3'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_31_60'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 97367
+      mmTop = 3175
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc4: TppDBCalc
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc4'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_61_90'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 120650
+      mmTop = 3175
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc5: TppDBCalc
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc5'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_OVER_90'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 143934
+      mmTop = 3175
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc11: TppDBCalc
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'ppDBCalc11'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'MEDICAL_TOTAL'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 167217
+      mmTop = 3175
+      mmWidth = 22490
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppLabelMedicalTotal: TppLabel
+      Visible = False
+      DesignLayer = ppDesignLayer1
+      UserName = 'LabelMedicalTotal'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'MEDICAL TOTAL'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 0
+      mmTop = 3175
+      mmWidth = 30000
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppLabelDialysisTotal: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'LabelDialysisTotal'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'DIALYSIS TOTAL'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 0
+      mmTop = 7600
+      mmWidth = 30000
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc6: TppDBCalc
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc6'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_CURRENT'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 50800
+      mmTop = 7600
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc7: TppDBCalc
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc7'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_1_30'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 74083
+      mmTop = 7673
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc8: TppDBCalc
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc8'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_31_60'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 97367
+      mmTop = 7673
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc9: TppDBCalc
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc9'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_61_90'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 120650
+      mmTop = 7673
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc10: TppDBCalc
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBCalc10'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_OVER_90'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 143934
+      mmTop = 7673
+      mmWidth = 21431
+      BandType = 7
+      LayerName = Foreground
+    end
+    object ppDBCalc12: TppDBCalc
+      DesignLayer = ppDesignLayer1
+      UserName = 'ppDBCalc12'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DIALYSIS_TOTAL'
+      DataPipeline = daADOQueryDataView1.qryArAgingMedicalDialysis
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryArAgingMedicalDialysis'
+      mmHeight = 3440
+      mmLeft = 167217
+      mmTop = 7600
+      mmWidth = 22490
+      BandType = 7
+      LayerName = Foreground
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daADOQueryDataView1: TdaADOQueryDataView
+      UserName = 'Query_qryArAgingMedicalDialysis'
+      Height = 352
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 224
+      AutoSearchTabOrder = 0
+      object qryArAgingMedicalDialysis: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'qryArAgingMedicalDialysis'
+        object ppField1: TppField
+          FieldAlias = 'CUSTOMER_ID'
+          FieldName = 'CUSTOMER_ID'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 0
+        end
+        object ppField2: TppField
+          FieldAlias = 'CUSTOMER_NAME'
+          FieldName = 'CUSTOMER_NAME'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 1
+        end
+        object ppField3: TppField
+          FieldAlias = 'MEDICAL_TOTAL'
+          FieldName = 'MEDICAL_TOTAL'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 2
+        end
+        object ppField4: TppField
+          FieldAlias = 'MEDICAL_CURRENT'
+          FieldName = 'MEDICAL_CURRENT'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 3
+        end
+        object ppField5: TppField
+          FieldAlias = 'MEDICAL_1_30'
+          FieldName = 'MEDICAL_1_30'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 4
+        end
+        object ppField6: TppField
+          FieldAlias = 'MEDICAL_31_60'
+          FieldName = 'MEDICAL_31_60'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 5
+        end
+        object ppField7: TppField
+          FieldAlias = 'MEDICAL_61_90'
+          FieldName = 'MEDICAL_61_90'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 6
+        end
+        object ppField8: TppField
+          FieldAlias = 'MEDICAL_OVER_90'
+          FieldName = 'MEDICAL_OVER_90'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 7
+        end
+        object ppField9: TppField
+          FieldAlias = 'DIALYSIS_TOTAL'
+          FieldName = 'DIALYSIS_TOTAL'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 8
+        end
+        object ppField10: TppField
+          FieldAlias = 'DIALYSIS_CURRENT'
+          FieldName = 'DIALYSIS_CURRENT'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 9
+        end
+        object ppField11: TppField
+          FieldAlias = 'DIALYSIS_1_30'
+          FieldName = 'DIALYSIS_1_30'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 10
+        end
+        object ppField12: TppField
+          FieldAlias = 'DIALYSIS_31_60'
+          FieldName = 'DIALYSIS_31_60'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 11
+        end
+        object ppField13: TppField
+          FieldAlias = 'DIALYSIS_61_90'
+          FieldName = 'DIALYSIS_61_90'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 12
+        end
+        object ppField14: TppField
+          FieldAlias = 'DIALYSIS_OVER_90'
+          FieldName = 'DIALYSIS_OVER_90'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 13
+        end
+        object ppField15: TppField
+          FieldAlias = 'GRAND_TOTAL'
+          FieldName = 'GRAND_TOTAL'
+          FieldLength = 4
+          DataType = dtDouble
+          DisplayWidth = 39
+          Position = 14
+        end
+      end
+      object daSQL1: TdaSQL
+        DatabaseName = 'ADOConnection'
+        DatabaseType = dtMySQL
+        DataPipelineName = 'qryArAgingMedicalDialysis'
+        EditSQLAsText = True
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltParameterizedSQL
+        MaxSQLFieldAliasLength = 0
+        SQLText.Strings = (
+          'SELECT'
+          '    c.ID AS CUSTOMER_ID,'
+          '    c.NAME AS CUSTOMER_NAME,'
+          '    SUM(CASE WHEN DATEDIFF(CURDATE(), COALESCE(i.DUE_DATE, i.DATE)) <= 0 THEN i.BALANCE_DUE ELSE 0 END) AS DIALYSIS_CURRENT,'
+          '    SUM(CASE WHEN DATEDIFF(CURDATE(), COALESCE(i.DUE_DATE, i.DATE)) BETWEEN 1 AND 30 THEN i.BALANCE_DUE ELSE 0 END) AS DIALYSIS_1_30,'
+          '    SUM(CASE WHEN DATEDIFF(CURDATE(), COALESCE(i.DUE_DATE, i.DATE)) BETWEEN 31 AND 60 THEN i.BALANCE_DUE ELSE 0 END) AS DIALYSIS_31_60,'
+          '    SUM(CASE WHEN DATEDIFF(CURDATE(), COALESCE(i.DUE_DATE, i.DATE)) BETWEEN 61 AND 90 THEN i.BALANCE_DUE ELSE 0 END) AS DIALYSIS_61_90,'
+          '    SUM(CASE WHEN DATEDIFF(CURDATE(), COALESCE(i.DUE_DATE, i.DATE)) > 90 THEN i.BALANCE_DUE ELSE 0 END) AS DIALYSIS_OVER_90,'
+          '    SUM(i.BALANCE_DUE) AS DIALYSIS_TOTAL,'
+          '    0 AS MEDICAL_CURRENT,'
+          '    0 AS MEDICAL_1_30,'
+          '    0 AS MEDICAL_31_60,'
+          '    0 AS MEDICAL_61_90,'
+          '    0 AS MEDICAL_OVER_90,'
+          '    0 AS MEDICAL_TOTAL,'
+          '    SUM(i.BALANCE_DUE) AS GRAND_TOTAL'
+          'FROM invoice i'
+          'INNER JOIN contact c ON c.ID = i.CUSTOMER_ID'
+          'WHERE COALESCE(i.BALANCE_DUE, 0) <> 0'
+          '  AND i.CLASS_ID = 2'
+          'GROUP BY c.ID, c.NAME'
+          'ORDER BY c.NAME'
+        )
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'CUSTOMER_ID'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'CUSTOMER_ID'
+          FieldLength = 0
+          FieldName = 'CUSTOMER_ID'
+          SQLFieldName = 'CUSTOMER_ID'
+        end
+        object daField2: TdaField
+          Alias = 'CUSTOMER_NAME'
+          DisplayWidth = 100
+          FieldAlias = 'CUSTOMER_NAME'
+          FieldLength = 100
+          FieldName = 'CUSTOMER_NAME'
+          SQLFieldName = 'CUSTOMER_NAME'
+        end
+        object daField3: TdaField
+          Alias = 'MEDICAL_TOTAL'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'MEDICAL_TOTAL'
+          FieldLength = 4
+          FieldName = 'MEDICAL_TOTAL'
+          SQLFieldName = 'MEDICAL_TOTAL'
+        end
+        object daField4: TdaField
+          Alias = 'MEDICAL_CURRENT'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'MEDICAL_CURRENT'
+          FieldLength = 4
+          FieldName = 'MEDICAL_CURRENT'
+          SQLFieldName = 'MEDICAL_CURRENT'
+        end
+        object daField5: TdaField
+          Alias = 'MEDICAL_1_30'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'MEDICAL_1_30'
+          FieldLength = 4
+          FieldName = 'MEDICAL_1_30'
+          SQLFieldName = 'MEDICAL_1_30'
+        end
+        object daField6: TdaField
+          Alias = 'MEDICAL_31_60'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'MEDICAL_31_60'
+          FieldLength = 4
+          FieldName = 'MEDICAL_31_60'
+          SQLFieldName = 'MEDICAL_31_60'
+        end
+        object daField7: TdaField
+          Alias = 'MEDICAL_61_90'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'MEDICAL_61_90'
+          FieldLength = 4
+          FieldName = 'MEDICAL_61_90'
+          SQLFieldName = 'MEDICAL_61_90'
+        end
+        object daField8: TdaField
+          Alias = 'MEDICAL_OVER_90'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'MEDICAL_OVER_90'
+          FieldLength = 4
+          FieldName = 'MEDICAL_OVER_90'
+          SQLFieldName = 'MEDICAL_OVER_90'
+        end
+        object daField9: TdaField
+          Alias = 'DIALYSIS_TOTAL'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'DIALYSIS_TOTAL'
+          FieldLength = 4
+          FieldName = 'DIALYSIS_TOTAL'
+          SQLFieldName = 'DIALYSIS_TOTAL'
+        end
+        object daField10: TdaField
+          Alias = 'DIALYSIS_CURRENT'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'DIALYSIS_CURRENT'
+          FieldLength = 4
+          FieldName = 'DIALYSIS_CURRENT'
+          SQLFieldName = 'DIALYSIS_CURRENT'
+        end
+        object daField11: TdaField
+          Alias = 'DIALYSIS_1_30'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'DIALYSIS_1_30'
+          FieldLength = 4
+          FieldName = 'DIALYSIS_1_30'
+          SQLFieldName = 'DIALYSIS_1_30'
+        end
+        object daField12: TdaField
+          Alias = 'DIALYSIS_31_60'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'DIALYSIS_31_60'
+          FieldLength = 4
+          FieldName = 'DIALYSIS_31_60'
+          SQLFieldName = 'DIALYSIS_31_60'
+        end
+        object daField13: TdaField
+          Alias = 'DIALYSIS_61_90'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'DIALYSIS_61_90'
+          FieldLength = 4
+          FieldName = 'DIALYSIS_61_90'
+          SQLFieldName = 'DIALYSIS_61_90'
+        end
+        object daField14: TdaField
+          Alias = 'DIALYSIS_OVER_90'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'DIALYSIS_OVER_90'
+          FieldLength = 4
+          FieldName = 'DIALYSIS_OVER_90'
+          SQLFieldName = 'DIALYSIS_OVER_90'
+        end
+        object daField15: TdaField
+          Alias = 'GRAND_TOTAL'
+          DataType = dtDouble
+          DisplayWidth = 39
+          FieldAlias = 'GRAND_TOTAL'
+          FieldLength = 4
+          FieldName = 'GRAND_TOTAL'
+          SQLFieldName = 'GRAND_TOTAL'
+        end
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    object raProgramInfo1: TraProgramInfo
+      raClassName = 'TraProgram'
+      raProgram.ChildType = 21
+      raProgram.ProgramName = 'FormatReportTitle'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure FormatReportTitle;'#13#10'var'#13#10'  S: string;'#13#10'  Sep: string;'#13 +
+        #10'  ChrWidth: Single;'#13#10'  CoNameWidth: Single;'#13#10'  CoNameLeft: Sing' +
+        'le;'#13#10'  CoContactInfoWidth: Single;'#13#10'  CoContactInfoLeft: Single;' +
+        #13#10'  BandWidth: Single;'#13#10'  ByPass: Boolean;'#13#10'begin'#13#10'  BandWidth :' +
+        '= (CompanyAddress.Left + CompanyAddress.Width);'#13#10'  S := Report.P' +
+        'arameters['#39'CompanyName'#39'];'#13#10'  if not ByPass then'#13#10'  begin'#13#10'    Ch' +
+        'rWidth := CompanyName.Width / Length(CompanyName.Text);'#13#10'    CoN' +
+        'ameWidth:= ChrWidth * (Length(S) - 1);'#13#10'    CoNameLeft := Compan' +
+        'yName.Left + (CompanyName.Width - CoNameWidth);'#13#10'  end;'#13#10'  Heade' +
+        'rBar.Left := CoNameLeft;'#13#10'  HeaderBar.Width := BandWidth - Heade' +
+        'rBar.Left;'#13#10'  CompanyName.Text := S;'#13#10'  '#13#10'  CompanyAddress.Lines' +
+        '.Clear;'#13#10'  CompanyAddress.Lines.Add(Report.Parameters['#39'CompanyAd' +
+        'dress'#39']);'#13#10'  S := '#39#39';'#13#10'  Sep := '#39' '#8226' '#39';'#13#10'  if Report.Parameters['#39 +
+        'CompanyEmailAddress'#39'] <> '#39#39' then'#13#10'    S := Report.Parameters['#39'Co' +
+        'mpanyEmailAddress'#39'];'#13#10'  if Report.Parameters['#39'CompanyPhoneNo'#39'] <' +
+        '> '#39#39' then'#13#10'  begin'#13#10'    if S <> '#39#39' then S := S + Sep;'#13#10'    S := ' +
+        'S + '#39'Phone '#39' + Report.Parameters['#39'CompanyPhoneNo'#39'];'#13#10'  end;'#13#10'  i' +
+        'f Report.Parameters['#39'CompanyMobileNo'#39'] <> '#39#39' then'#13#10'  begin'#13#10'    ' +
+        'if S <> '#39#39' then S := S + Sep;'#13#10'    S := S + '#39'Mobile '#39' +  Report.' +
+        'Parameters['#39'CompanyMobileNo'#39'];'#13#10'  end;'#13#10'  if Report.Parameters['#39 +
+        'CompanyFaxNo'#39'] <> '#39#39' then'#13#10'  begin'#13#10'    if S <> '#39#39' then S := S +' +
+        ' Sep;'#13#10'    S := S + '#39'Fax '#39' +  Report.Parameters['#39'CompanyFaxNo'#39'];' +
+        #13#10'  end;'#13#10'  if Report.Parameters['#39'CompanyTin'#39'] <> '#39#39' then'#13#10'  beg' +
+        'in'#13#10'    if S <> '#39#39' then S := S + Sep;'#13#10'    S := S + '#39'Tin '#39' +  Re' +
+        'port.Parameters['#39'CompanyTin'#39'];'#13#10'  end;'#13#10'  CompanyContactInfo.Tex' +
+        't := S;'#13#10'  '#13#10'  if not ByPass then'#13#10'  begin'#13#10'    ChrWidth := Comp' +
+        'anyContactInfo.Width / Length(CompanyContactInfo.Text);'#13#10'    CoC' +
+        'ontactInfoWidth := ChrWidth * (Length(S) - 1);'#13#10'    CoContactInf' +
+        'oLeft := CompanyContactInfo.Left + '#13#10'      (CompanyContactInfo.W' +
+        'idth - CoContactInfoWidth);'#13#10'  end;'#13#10'  if CoContactInfoLeft < He' +
+        'aderBar.Left then'#13#10'  begin'#13#10'    HeaderBar.Left := CoContactInfoL' +
+        'eft;'#13#10'    HeaderBar.Width := BandWidth - HeaderBar.Left;'#13#10'  end;' +
+        #13#10'  '#13#10'  ByPass := True;'#13#10'end;'#13#10
+    end
+    object raProgramInfo2: TraProgramInfo
+      raClassName = 'TraProgram'
+      raProgram.ChildType = 21
+      raProgram.ProgramName = 'FormatDateRange'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure FormatDateRange;'#13#10'begin'#13#10'  if Report.Parameters.InList' +
+        '('#39'RangeTo'#39') then'#13#10'    DateRangeLabel.Text := '#39'As of '#39' + FormatDa' +
+        'teTime('#39'mmmm d, yyyy'#39', Report.Parameters['#39'RangeTo'#39'])'#13#10'  else'#13#10'  ' +
+        '  DateRangeLabel.Text := '#39'All transactions'#39';'#13#10'end;'#13#10
+    end
+    object raProgramInfo3: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'TitleBeforePrint'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure TitleBeforePrint;'#13#10'begin'#13#10'  FormatReportTitle;'#13#10'  Form' +
+        'atDateRange;'#13#10'end;'#13#10
+      raProgram.ComponentName = 'Title'
+      raProgram.EventName = 'BeforePrint'
+      raProgram.EventID = 24
+    end
+    object raProgramInfo4: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'TotalBalanceOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure TotalBalanceOnCalc(var Value: Variant);'#13#10'begin'#13#10'  Valu' +
+        'e := Value + qryArAgingMedicalDialysis['#39'GRAND_TOTAL'#39'];'#13#10'end;'#13#10
+      raProgram.ComponentName = 'TotalBalance'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo5: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'AmountOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure AmountOnCalc(var Value: Variant);'#13#10'begin'#13#10'  Value := q' +
+        'ryArAgingMedicalDialysis['#39'GRAND_TOTAL'#39'];'#13#10'end;'#13#10
+      raProgram.ComponentName = 'Amount'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo6: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'SubTitleOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure SubTitleOnCalc(var Value: Variant);'#13#10'begin'#13#10'  if Repor' +
+        't.Parameters.InList('#39'SubTitle'#39') then'#13#10'    Value := Report.Parame' +
+        'ters['#39'SubTitle'#39']'#13#10'  else'#13#10'    Value := '#39'All Records'#39';'#13#10'end;'#13#10
+      raProgram.ComponentName = 'SubTitle'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object CompanyName: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"Argo Distributors, Inc."'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Argo Distributors, Inc.'
+      UserName = 'Parameter1'
+    end
+    object CompanyAddress: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 
+        '"Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of' +
+        ' General Santos City, South Cotabato Philippines"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 
+        'Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of ' +
+        'General Santos City, South Cotabato Philippines'
+    end
+    object CompanyPhoneNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"(083) 552-3917"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '(083) 552-3917'
+      UserName = 'CompanyPhoneNo'
+    end
+    object CompanyMobileNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyMobileNo'
+    end
+    object CompanyFaxNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyFaxNo'
+    end
+    object CompanyEmailAddress: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyEmailAddress'
+    end
+    object CompanyTin: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '278-858-657-00000'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '278-858-657-00000'
+      UserName = 'CompanyTin'
+    end
+    object RangeTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '46335.9999884259'
+      DataType = dtDateTime
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 46335.9999884259d
+      UserName = 'RangeTo'
+    end
+    object DateFrom: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'DateFrom'
+    end
+    object DateTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"11/9/2026 11:59:59 PM"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '11/9/2026 11:59:59 PM'
+      UserName = 'DateTo'
+    end
+    object LocationId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'LocationId'
+    end
+    object LocationGroupId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'LocationGroupId'
+    end
+    object DocumentType: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'DocumentType'
+    end
+    object CustomerGroupId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '1'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '1'
+      UserName = 'CustomerGroupId'
+    end
+    object CustomerId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'CustomerId'
+    end
+    object SalesRepId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'SalesRepId'
+    end
+    object DocumentStatus: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'DocumentStatus'
+    end
+    object RefNoFrom: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'RefNoFrom'
+    end
+    object RefNoTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'RefNoTo'
+    end
+    object SubTitle: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"All locations / MEDICAL"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'All locations / MEDICAL'
+      UserName = 'SubTitle1'
+    end
+  end
+end
