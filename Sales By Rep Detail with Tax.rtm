@@ -1,0 +1,1636 @@
+object TppReport
+  AutoStop = False
+  DataPipeline = plSalesBase
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Sales by Rep Detail w/ tax'
+  PrinterSetup.Duplex = dpNone
+  PrinterSetup.Orientation = poLandscape
+  PrinterSetup.PaperName = 'Letter'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 12700
+  PrinterSetup.mmMarginLeft = 12700
+  PrinterSetup.mmMarginRight = 12700
+  PrinterSetup.mmMarginTop = 12700
+  PrinterSetup.mmPaperHeight = 215900
+  PrinterSetup.mmPaperWidth = 279401
+  PrinterSetup.PaperSize = 1
+  Template.DatabaseSettings.Name = 'Sales by Rep Detail w/ tax'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'C:\Users\User\Documents\GitHub\argo\Sales By Rep Detail with Tax' +
+    '.rtm'
+  Template.Format = ftASCII
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  ModalPreview = False
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  ThumbnailSettings.PageHighlight.Width = 3
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.AllowExtract = True
+  PDFSettings.EncryptSettings.AllowAssemble = True
+  PDFSettings.EncryptSettings.AllowQualityPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.EncryptSettings.EncryptionType = etRC4
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PDFSettings.PDFAFormat = pafNone
+  PreviewFormSettings.PageBorder.mmPadding = 0
+  PreviewFormSettings.PageDisplay = pdContinuous
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<FindText>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  XLSSettings.WorksheetName = 'Report'
+  Version = '19.04'
+  mmColumnWidth = 203200
+  DataPipelineName = 'plSalesBase'
+  object ppTitleBand1: TppTitleBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 15081
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'CompanyName'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'CompanyName'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 15240256
+      Font.Name = 'Trebuchet MS'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 6085
+      mmLeft = 155575
+      mmTop = 0
+      mmWidth = 34131
+      BandType = 1
+      LayerName = Foreground1
+    end
+    object ppMemo2: TppMemo
+      DesignLayer = ppDesignLayer2
+      UserName = 'CompanyAddress'
+      KeepTogether = True
+      Anchors = [atTop, atRight]
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'CompanyAddress'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 15240256
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      Lines.Strings = (
+        
+          'Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of ' +
+          'General Santos City, South Cotabato Philippines')
+      RemoveEmptyLines = False
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 6615
+      mmLeft = 191560
+      mmTop = 0
+      mmWidth = 62442
+      BandType = 1
+      LayerName = Foreground1
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppLine19: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'HeaderBar'
+      Border.Color = 13061907
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Pen.Color = 13061907
+      Pen.Width = 2
+      Weight = 1.5000000000000000
+      mmHeight = 1852
+      mmLeft = 121445
+      mmTop = 7408
+      mmWidth = 132555
+      BandType = 1
+      LayerName = Foreground1
+    end
+    object ppLabel19: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'CompanyContactInfo'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 
+        'support@activesystems.com '#8226' Phone 123 456 7890 '#8226' Mobile 123 456 ' +
+        '7890 '#8226' Fax 123 456 7890'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 15240256
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 2910
+      mmLeft = 150548
+      mmTop = 9525
+      mmWidth = 103717
+      BandType = 1
+      LayerName = Foreground1
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 34925
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line1'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 2381
+      mmTop = 33602
+      mmWidth = 15875
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel2: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label101'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Date'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 2381
+      mmTop = 29369
+      mmWidth = 7673
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel3: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label3'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Ref. #'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 26723
+      mmTop = 29369
+      mmWidth = 10054
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine3: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line3'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 26723
+      mmTop = 33602
+      mmWidth = 27781
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel11: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'DateRangeLabel'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'January through December 2005'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 10
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 0
+      mmTop = 14552
+      mmWidth = 51329
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel21: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'ReportTitle'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Sales by Rep Detail'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Verdana'
+      Font.Size = 14
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 6011
+      mmLeft = 0
+      mmTop = 2910
+      mmWidth = 47752
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine2: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line2'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 206905
+      mmTop = 33602
+      mmWidth = 27517
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel5: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label2'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Item'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 102923
+      mmTop = 29369
+      mmWidth = 7938
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine4: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line4'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 102923
+      mmTop = 33602
+      mmWidth = 66940
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel6: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label4'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Unit Price'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 188384
+      mmTop = 29369
+      mmWidth = 15610
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine5: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line5'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 188384
+      mmTop = 33602
+      mmWidth = 18256
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel7: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label5'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Qty'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 171715
+      mmTop = 29369
+      mmWidth = 5556
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine6: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line6'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 171715
+      mmTop = 33602
+      mmWidth = 14817
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel9: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label7'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Customer'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 56356
+      mmTop = 29369
+      mmWidth = 15610
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine12: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line12'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 56356
+      mmTop = 33602
+      mmWidth = 44715
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppVariable8: TppVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'AmountLabel'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 0
+      CalcType = veReportStart
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 206905
+      mmTop = 29369
+      mmWidth = 21431
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppVariable7: TppVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'ReportBasisLabel'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 1
+      CalcType = veReportStart
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 0
+      mmTop = 20902
+      mmWidth = 21167
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppVariable9: TppVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'SubTitle'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 2
+      CalcType = veReportStart
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 9260
+      mmWidth = 15875
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppVariable2: TppVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'UnitPrice'
+      AutoSize = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 3
+      CalcType = veDataPipelineTraversal
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      Visible = False
+      mmHeight = 3969
+      mmLeft = 171450
+      mmTop = 17198
+      mmWidth = 18256
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLine11: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line11'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 236009
+      mmTop = 33602
+      mmWidth = 14817
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppLabel8: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label6'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Tax'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 236009
+      mmTop = 29369
+      mmWidth = 7717
+      BandType = 0
+      LayerName = Foreground1
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 4498
+    mmPrintPosition = 0
+    object ppDBText7: TppDBText
+      DesignLayer = ppDesignLayer2
+      UserName = 'DBText7'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'REF_NUMBER'
+      DataPipeline = plSalesBase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'plSalesBase'
+      mmHeight = 3969
+      mmLeft = 26723
+      mmTop = 0
+      mmWidth = 27781
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText3: TppDBText
+      DesignLayer = ppDesignLayer2
+      UserName = 'DBText3'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'REF_DATE'
+      DataPipeline = plSalesBase
+      DisplayFormat = 'mm/dd/yyyy'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'plSalesBase'
+      mmHeight = 3969
+      mmLeft = 2381
+      mmTop = 0
+      mmWidth = 15875
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppVariable1: TppVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'Description'
+      AutoSize = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 102923
+      mmTop = 0
+      mmWidth = 66940
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText1: TppDBText
+      DesignLayer = ppDesignLayer2
+      UserName = 'DBText1'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'QUANTITY'
+      DataPipeline = plSalesBase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'plSalesBase'
+      mmHeight = 3969
+      mmLeft = 171715
+      mmTop = 0
+      mmWidth = 14817
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText6: TppDBText
+      DesignLayer = ppDesignLayer2
+      UserName = 'DBText6'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'CUSTOMER_NAME'
+      DataPipeline = plSalesBase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      DataPipelineName = 'plSalesBase'
+      mmHeight = 3969
+      mmLeft = 56356
+      mmTop = 0
+      mmWidth = 44715
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppVariable6: TppVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'Amount'
+      AutoSize = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 1
+      DataType = dtDouble
+      DisplayFormat = '#,0.00;-#,0.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 206905
+      mmTop = 0
+      mmWidth = 27517
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText2: TppDBText
+      DesignLayer = ppDesignLayer2
+      UserName = 'DBText2'
+      Border.mmPadding = 0
+      DataField = 'RATE'
+      DataPipeline = plSalesBase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'plSalesBase'
+      mmHeight = 4498
+      mmLeft = 189707
+      mmTop = 0
+      mmWidth = 17198
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText5: TppDBText
+      DesignLayer = ppDesignLayer2
+      UserName = 'DBText5'
+      Border.mmPadding = 0
+      DataField = 'TAX_AMOUNT'
+      DataPipeline = plSalesBase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'plSalesBase'
+      mmHeight = 4189
+      mmLeft = 236273
+      mmTop = -265
+      mmWidth = 17198
+      BandType = 4
+      LayerName = Foreground1
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 5027
+    mmPrintPosition = 0
+    object ppSystemVariable1: TppSystemVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'PrintTimestamp'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 33602
+      BandType = 8
+      LayerName = Foreground1
+    end
+    object ppSystemVariable2: TppSystemVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'PrintPageCount'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      VarType = vtPageSetDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 238125
+      mmTop = 0
+      mmWidth = 16140
+      BandType = 8
+      LayerName = Foreground1
+    end
+  end
+  object ppSummaryBand1: TppSummaryBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 29898
+    mmPrintPosition = 0
+    object ppLabel10: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label8'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Total'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3831
+      mmLeft = 0
+      mmTop = 3175
+      mmWidth = 8086
+      BandType = 7
+      LayerName = Foreground1
+    end
+    object ppLine8: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line101'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Style = lsDouble
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 206905
+      mmTop = 2117
+      mmWidth = 27517
+      BandType = 7
+      LayerName = Foreground1
+    end
+    object ppVariable4: TppVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'GrandTotal'
+      AutoSize = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 0
+      DataType = dtDouble
+      DisplayFormat = 'P#,0.00;(P#,0.00)'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 206905
+      mmTop = 3175
+      mmWidth = 27517
+      BandType = 7
+      LayerName = Foreground1
+    end
+    object ppDBCalc1: TppDBCalc
+      DesignLayer = ppDesignLayer2
+      UserName = 'TotalVat'
+      Border.mmPadding = 0
+      DataField = 'TAX_AMOUNT'
+      DataPipeline = plSalesBase
+      DisplayFormat = '#,0.00;(#,0.00)'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'plSalesBase'
+      mmHeight = 3704
+      mmLeft = 206905
+      mmTop = 11642
+      mmWidth = 27517
+      BandType = 7
+      LayerName = Foreground1
+    end
+    object ppVariable10: TppVariable
+      DesignLayer = ppDesignLayer2
+      UserName = 'GrossAmount'
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 1
+      DataType = dtDouble
+      DisplayFormat = '#,0.00;(#,0.00)'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 212990
+      mmTop = 20373
+      mmWidth = 21696
+      BandType = 7
+      LayerName = Foreground1
+    end
+    object ppLine9: TppLine
+      DesignLayer = ppDesignLayer2
+      UserName = 'Line9'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Style = lsDouble
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 206905
+      mmTop = 24871
+      mmWidth = 27517
+      BandType = 7
+      LayerName = Foreground1
+    end
+    object ppLabel4: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label1'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Gross'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3810
+      mmLeft = 0
+      mmTop = 20373
+      mmWidth = 9031
+      BandType = 7
+      LayerName = Foreground1
+    end
+    object ppLabel12: TppLabel
+      DesignLayer = ppDesignLayer2
+      UserName = 'Label12'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Value Added Tax (VAT)'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3810
+      mmLeft = 0
+      mmTop = 11642
+      mmWidth = 32738
+      BandType = 7
+      LayerName = Foreground1
+    end
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'SALES_REP_NAME'
+    DataPipeline = plSalesBase
+    GroupFileSettings.NewFile = False
+    GroupFileSettings.EmailFile = False
+    OutlineSettings.CreateNode = True
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'plSalesBase'
+    NewFile = False
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Background.Brush.Style = bsClear
+      Border.mmPadding = 0
+      mmBottomOffset = 0
+      mmHeight = 4763
+      mmPrintPosition = 0
+      object ppDBText4: TppDBText
+        DesignLayer = ppDesignLayer2
+        UserName = 'DBText4'
+        AutoSize = True
+        Border.Weight = 1.0000000000000000
+        Border.mmPadding = 0
+        DataField = 'SALES_REP_NAME'
+        DataPipeline = plSalesBase
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Tahoma'
+        Font.Size = 8
+        Font.Style = [fsBold]
+        Transparent = True
+        DataPipelineName = 'plSalesBase'
+        mmHeight = 3439
+        mmLeft = 2381
+        mmTop = 794
+        mmWidth = 40217
+        BandType = 3
+        GroupNo = 1
+        LayerName = Foreground1
+      end
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Background.Brush.Style = bsClear
+      Border.mmPadding = 0
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 8467
+      mmPrintPosition = 0
+      object ppLine10: TppLine
+        DesignLayer = ppDesignLayer2
+        UserName = 'Line10'
+        Border.Weight = 1.0000000000000000
+        Border.mmPadding = 0
+        Weight = 0.7500000000000000
+        mmHeight = 1323
+        mmLeft = 206905
+        mmTop = 529
+        mmWidth = 27517
+        BandType = 5
+        GroupNo = 1
+        LayerName = Foreground1
+      end
+      object ppLine7: TppLine
+        DesignLayer = ppDesignLayer2
+        UserName = 'Line7'
+        Border.Weight = 1.0000000000000000
+        Border.mmPadding = 0
+        Weight = 0.7500000000000000
+        mmHeight = 1323
+        mmLeft = 189442
+        mmTop = 265
+        mmWidth = 14817
+        BandType = 5
+        GroupNo = 1
+        LayerName = Foreground1
+      end
+      object ppDBCalc2: TppDBCalc
+        DesignLayer = ppDesignLayer2
+        UserName = 'DBCalc2'
+        Border.Weight = 1.0000000000000000
+        Border.mmPadding = 0
+        DataField = 'QUANTITY'
+        DataPipeline = plSalesBase
+        DisplayFormat = '#,0.##'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Tahoma'
+        Font.Size = 9
+        Font.Style = [fsBold]
+        ResetGroup = ppGroup1
+        TextAlignment = taRightJustified
+        Transparent = True
+        DataPipelineName = 'plSalesBase'
+        mmHeight = 3895
+        mmLeft = 189442
+        mmTop = 794
+        mmWidth = 14817
+        BandType = 5
+        GroupNo = 1
+        LayerName = Foreground1
+      end
+      object ppVariable3: TppVariable
+        DesignLayer = ppDesignLayer2
+        UserName = 'SalesRepTotal'
+        Border.Weight = 1.0000000000000000
+        Border.mmPadding = 0
+        BlankWhenZero = False
+        CalcOrder = 0
+        CalcComponent = ppGroup1
+        CalcType = veGroupBeforeFooter
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Tahoma'
+        Font.Size = 9
+        Font.Style = [fsBold]
+        ResetComponent = ppGroup1
+        ResetType = veGroupEnd
+        Transparent = True
+        mmHeight = 3895
+        mmLeft = 0
+        mmTop = 794
+        mmWidth = 23029
+        BandType = 5
+        GroupNo = 1
+        LayerName = Foreground1
+      end
+      object ppVariable5: TppVariable
+        DesignLayer = ppDesignLayer2
+        UserName = 'SalesRepTotalAmount'
+        AutoSize = False
+        Border.Weight = 1.0000000000000000
+        Border.mmPadding = 0
+        BlankWhenZero = False
+        CalcOrder = 1
+        DataType = dtDouble
+        DisplayFormat = 'P#,0.00;(P#,0.00)'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Tahoma'
+        Font.Size = 9
+        Font.Style = [fsBold]
+        ResetComponent = ppGroup1
+        ResetType = veGroupEnd
+        TextAlignment = taRightJustified
+        Transparent = True
+        mmHeight = 3969
+        mmLeft = 206905
+        mmTop = 1058
+        mmWidth = 27517
+        BandType = 5
+        GroupNo = 1
+        LayerName = Foreground1
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    object raProgramInfo1: TraProgramInfo
+      raClassName = 'TraProgram'
+      raProgram.ChildType = 21
+      raProgram.ProgramName = 'FormatReportTitle'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure FormatReportTitle;'#13#10'var'#13#10'  S: string;'#13#10'  Sep: string;'#13 +
+        #10'  ChrWidth: Single;'#13#10'  CoNameWidth: Single;'#13#10'  CoNameLeft: Sing' +
+        'le;'#13#10'  CoContactInfoWidth: Single;'#13#10'  CoContactInfoLeft: Single;' +
+        #13#10'  BandWidth: Single;'#13#10'  ByPass: Boolean;'#13#10'begin'#13#10'  BandWidth :' +
+        '= (CompanyAddress.Left + CompanyAddress.Width);'#13#10'  S := Report.P' +
+        'arameters['#39'CompanyName'#39'];'#13#10'  if not ByPass then'#13#10'  begin'#13#10'    Ch' +
+        'rWidth := CompanyName.Width / Length(CompanyName.Text);'#13#10'    CoN' +
+        'ameWidth:= ChrWidth * (Length(S) - 1);'#13#10'    CoNameLeft := Compan' +
+        'yName.Left + (CompanyName.Width - CoNameWidth);'#13#10'  end;'#13#10'  Heade' +
+        'rBar.Left := CoNameLeft;'#13#10'  HeaderBar.Width := BandWidth - Heade' +
+        'rBar.Left;'#13#10'  CompanyName.Text := S;'#13#10'  '#13#10'  CompanyAddress.Lines' +
+        '.Clear;'#13#10'  CompanyAddress.Lines.Add(Report.Parameters['#39'CompanyAd' +
+        'dress'#39']);'#13#10'  S := '#39#39';'#13#10'  Sep := '#39' '#8226' '#39';'#13#10'  if Report.Parameters['#39 +
+        'CompanyEmailAddress'#39'] <> '#39#39' then'#13#10'    S := Report.Parameters['#39'Co' +
+        'mpanyEmailAddress'#39'];'#13#10'  if Report.Parameters['#39'CompanyPhoneNo'#39'] <' +
+        '> '#39#39' then'#13#10'  begin'#13#10'    if S <> '#39#39' then S := S + Sep;'#13#10'    S := ' +
+        'S + '#39'Phone '#39' + Report.Parameters['#39'CompanyPhoneNo'#39'];'#13#10'  end;'#13#10'  i' +
+        'f Report.Parameters['#39'CompanyMobileNo'#39'] <> '#39#39' then'#13#10'  begin'#13#10'    ' +
+        'if S <> '#39#39' then S := S + Sep;'#13#10'    S := S + '#39'Mobile '#39' +  Report.' +
+        'Parameters['#39'CompanyMobileNo'#39'];'#13#10'  end;'#13#10'  if Report.Parameters['#39 +
+        'CompanyFaxNo'#39'] <> '#39#39' then'#13#10'  begin'#13#10'    if S <> '#39#39' then S := S +' +
+        ' Sep;'#13#10'    S := S + '#39'Fax '#39' +  Report.Parameters['#39'CompanyFaxNo'#39'];' +
+        #13#10'  end;'#13#10'  if Report.Parameters['#39'CompanyTin'#39'] <> '#39#39' then'#13#10'  beg' +
+        'in'#13#10'    if S <> '#39#39' then S := S + Sep;'#13#10'    S := S + '#39'Tin '#39' +  Re' +
+        'port.Parameters['#39'CompanyTin'#39'];'#13#10'  end;'#13#10'  CompanyContactInfo.Tex' +
+        't := S;'#13#10'  '#13#10'  if not ByPass then'#13#10'  begin'#13#10'    ChrWidth := Comp' +
+        'anyContactInfo.Width / Length(CompanyContactInfo.Text);'#13#10'    CoC' +
+        'ontactInfoWidth := ChrWidth * (Length(S) - 1);'#13#10'    CoContactInf' +
+        'oLeft := CompanyContactInfo.Left + '#13#10'      (CompanyContactInfo.W' +
+        'idth - CoContactInfoWidth);'#13#10'  end;'#13#10'  if CoContactInfoLeft < He' +
+        'aderBar.Left then'#13#10'  begin'#13#10'    HeaderBar.Left := CoContactInfoL' +
+        'eft;'#13#10'    HeaderBar.Width := BandWidth - HeaderBar.Left;'#13#10'  end;' +
+        #13#10'  '#13#10'  ByPass := True;'#13#10'end;'#13#10
+    end
+    object raProgramInfo2: TraProgramInfo
+      raClassName = 'TraProgram'
+      raProgram.ChildType = 21
+      raProgram.ProgramName = 'FormatDateRange'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure FormatDateRange;'#13#10'var'#13#10'  YearFrom: Integer;'#13#10'  MonthFr' +
+        'om: Integer;'#13#10'  DayFrom: Integer;'#13#10'  YearTo: Integer;'#13#10'  MonthTo' +
+        ': Integer;'#13#10'  DayTo: Integer;'#13#10'  RangeFrom: TDateTime;'#13#10'  RangeT' +
+        'o: TDateTime;'#13#10'  S: string;'#13#10'begin'#13#10'  if Report.Parameters.InLis' +
+        't('#39'RangeTo'#39') then'#13#10'  begin'#13#10'    RangeFrom := Report.Parameters['#39 +
+        'RangeFrom'#39'];'#13#10'    RangeTo := Report.Parameters['#39'RangeTo'#39'];'#13#10'    ' +
+        'DecodeDate(RangeFrom, YearFrom, MonthFrom, DayFrom);'#13#10'    Decode' +
+        'Date(RangeTo, YearTo, MonthTo, DayTo);'#13#10'    if YearFrom = YearTo' +
+        ' then'#13#10'    begin'#13#10'      if MonthFrom = MonthTo then'#13#10'      begin' +
+        #13#10'        if DayFrom = DayTo then'#13#10'          S := FormatDateTime' +
+        '('#39'mmmm d, yyyy'#39', RangeTo)'#13#10'        else'#13#10'          S := FormatDa' +
+        'teTime('#39'mmmm '#39' + IntToStr(DayFrom) +'#13#10'            '#39' - '#39' + IntToS' +
+        'tr(DayTo)  + '#39', yyyy'#39', RangeTo);'#13#10'      end'#13#10'      else'#13#10'      b' +
+        'egin'#13#10'        S := FormatDateTime('#39'mmmm d'#39', RangeFrom);'#13#10'       ' +
+        ' S := S + '#39' through '#39' + FormatDateTime('#39'mmmm d, yyyy'#39', RangeTo);' +
+        #13#10'      end;'#13#10'    end'#13#10'    else'#13#10'    begin'#13#10'      S := FormatDat' +
+        'eTime('#39'mmmm d, yyyy'#39', RangeFrom);'#13#10'      S := S + '#39' through '#39' + ' +
+        'FormatDateTime('#39'mmmm d, yyyy'#39', RangeTo);'#13#10'    end;'#13#10'    DateRang' +
+        'eLabel.Text := S;'#13#10'  end'#13#10'  else'#13#10'    DateRangeLabel.Text := '#39'Al' +
+        'l transactions'#39';'#13#10'end;'#13#10
+    end
+    object raProgramInfo3: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'TitleBeforePrint'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure TitleBeforePrint;'#13#10'begin'#13#10'  FormatReportTitle;'#13#10'  Form' +
+        'atDateRange;'#13#10'end;'#13#10
+      raProgram.ComponentName = 'Title'
+      raProgram.EventName = 'BeforePrint'
+      raProgram.EventID = 24
+    end
+    object raProgramInfo4: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'DescriptionOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure DescriptionOnCalc(var Value: Variant);'#13#10'begin'#13#10'  if pl' +
+        'SalesByRepDetail['#39'LINE_DESC'#39'] <> '#39#39'  then'#13#10'    Value := plSalesB' +
+        'yRepDetail['#39'LINE_DESC'#39']'#13#10'  else'#13#10'    Value := plSalesByRepDetail' +
+        '['#39'ITEM_DESC'#39'];'#13#10#13#10'end;'#13#10
+      raProgram.ComponentName = 'Description'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo5: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'UnitPriceOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure UnitPriceOnCalc(var Value: Variant);'#13#10'begin'#13#10'  if plSa' +
+        'lesByRepDetail['#39'RATE_TYPE'#39'] = 0 then'#13#10'    if plSalesByRepDetail[' +
+        #39'RATE'#39'] <> 0 then'#13#10'      Value := FormatFloat('#39',0.00'#39', plSalesBy' +
+        'RepDetail['#39'RATE'#39'])'#13#10'    else if plSalesByRepDetail['#39'ITEM_TYPE'#39'] ' +
+        '<> 5 then'#13#10'    '#9'Value := '#39'Free'#39#13#10'    else'#13#10'    '#9'Value := '#39#39#13#10'  e' +
+        'lse'#13#10'    Value := FormatFloat('#39',0.# %'#39', plSalesByRepDetail['#39'RATE' +
+        #39']);'#13#10'end;'#13#10
+      raProgram.ComponentName = 'UnitPrice'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo6: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'SalesRepTotalOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure SalesRepTotalOnCalc(var Value: Variant);'#13#10'begin'#13#10'  Val' +
+        'ue := plSalesByRepDetail['#39'SALES_REP_NAME'#39'] + '#39#39#39's Total Sales'#39';'#13 +
+        #10'end;'#13#10
+      raProgram.ComponentName = 'SalesRepTotal'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo7: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'SalesRepTotalAmountOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure SalesRepTotalAmountOnCalc(var Value: Variant);'#13#10'begin'#13 +
+        #10'  if (plSalesByRepDetail['#39'ITEM_TYPE'#39'] <> 5) and (plSalesByRepDe' +
+        'tail['#39'ITEM_TYPE'#39'] <> 6) then'#13#10'    Value := Value + Amount.Value;' +
+        #13#10'end;'#13#10
+      raProgram.ComponentName = 'SalesRepTotalAmount'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo8: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'GrandTotalOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure GrandTotalOnCalc(var Value: Variant);'#13#10'begin'#13#10'  if (pl' +
+        'SalesByRepDetail['#39'ITEM_TYPE'#39'] <> 5) and (plSalesByRepDetail['#39'ITE' +
+        'M_TYPE'#39'] <> 6) then'#13#10'    Value := Value + Amount.Value;'#13#10'end;'#13#10
+      raProgram.ComponentName = 'GrandTotal'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo9: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'AmountOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure AmountOnCalc(var Value: Variant);'#13#10'var'#13#10'  Accrual: Boo' +
+        'lean;'#13#10'begin'#13#10'  Accrual := True;'#13#10'  if Report.Parameters.InList(' +
+        #39'ReportBasis'#39') then'#13#10'    Accrual := Report.Parameters['#39'ReportBas' +
+        'is'#39'] = 0;'#13#10'  if Accrual then'#13#10'    Value := plSalesByRepDetail['#39'A' +
+        'MOUNT'#39']'#13#10'  else'#13#10'    Value := plSalesByRepDetail['#39'AMOUNT_PAID'#39'];' +
+        #13#10'end;'#13#10
+      raProgram.ComponentName = 'Amount'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo10: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'AmountLabelOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure AmountLabelOnCalc(var Value: Variant);'#13#10'begin'#13#10'  if Re' +
+        'port.Parameters.InList('#39'ReportBasis'#39') then'#13#10'    if Report.Parame' +
+        'ters['#39'ReportBasis'#39'] = 0 then'#13#10'      Value := '#39'Amount'#39#13#10'    else'#13 +
+        #10'      Value := '#39'Amount Paid'#39#13#10'  else'#13#10'    Value := '#39'Amount'#39';'#13#10#13 +
+        #10'end;'#13#10
+      raProgram.ComponentName = 'AmountLabel'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo11: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'ReportBasisLabelOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure ReportBasisLabelOnCalc(var Value: Variant);'#13#10'begin'#13#10'  ' +
+        'if Report.Parameters.InList('#39'ReportBasis'#39') then'#13#10'    if Report.P' +
+        'arameters['#39'ReportBasis'#39'] = 0 then'#13#10'      Value := '#39'Accrual Basis' +
+        #39#13#10'    else'#13#10'      Value := '#39'Cash Basis'#39#13#10'  else'#13#10'    Value := '#39 +
+        'No Report Basis'#39';'#13#10#13#10'end;'#13#10
+      raProgram.ComponentName = 'ReportBasisLabel'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo12: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'SubTitleOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure SubTitleOnCalc(var Value: Variant);'#13#10'begin'#13#10'  if Repor' +
+        't.Parameters.InList('#39'SubTitle'#39') then'#13#10'    Value := Report.Parame' +
+        'ters['#39'SubTitle'#39']'#13#10'  else'#13#10'    Value := '#39'All Records'#39';'#13#10#13#10'end;'#13#10
+      raProgram.ComponentName = 'SubTitle'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo13: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'GrossAmountOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure GrossAmountOnCalc(var Value: Variant);'#13#10'begin'#13#10#13#10'  Val' +
+        'ue := GrandTotal.value + TotalVat.value;'#13#10#13#10'end;'#13#10
+      raProgram.ComponentName = 'GrossAmount'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+  end
+  object ppDesignLayers2: TppDesignLayers
+    object ppDesignLayer2: TppDesignLayer
+      UserName = 'Foreground1'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object CompanyName: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"Argo Distributors, Inc."'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Argo Distributors, Inc.'
+      UserName = 'Parameter1'
+    end
+    object CompanyAddress: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 
+        '"Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of' +
+        ' General Santos City, South Cotabato Philippines"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 
+        'Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of ' +
+        'General Santos City, South Cotabato Philippines'
+    end
+    object CompanyPhoneNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"(083) 552-3917"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '(083) 552-3917'
+      UserName = 'CompanyPhoneNo'
+    end
+    object CompanyMobileNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyMobileNo'
+    end
+    object CompanyFaxNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyFaxNo'
+    end
+    object CompanyEmailAddress: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyEmailAddress'
+    end
+    object CompanyTin: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '278-858-657-00000'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '278-858-657-00000'
+      UserName = 'CompanyTin'
+    end
+    object RangeFrom: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '46327'
+      DataType = dtDateTime
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 46327d
+      UserName = 'RangeFrom'
+    end
+    object RangeTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '46339.9999884259'
+      DataType = dtDateTime
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 46339.9999884259d
+      UserName = 'RangeTo'
+    end
+    object ReportBasis: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '0'
+      DataType = dtInteger
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 0
+      UserName = 'ReportBasis'
+    end
+    object SubTitle: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"All locations"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'All locations'
+    end
+    object DateFrom: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '11/1/2026'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '11/1/2026'
+      UserName = 'DateFrom'
+    end
+    object DateTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"11/13/2026 11:59:59 PM"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '11/13/2026 11:59:59 PM'
+      UserName = 'DateTo'
+    end
+    object LocationId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'LocationId'
+    end
+    object LocationGroupId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'LocationGroupId'
+    end
+    object DocumentType: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'DocumentType'
+    end
+    object CustomerGroupId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'CustomerGroupId'
+    end
+    object CustomerId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'CustomerId'
+    end
+    object SalesRepId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'SalesRepId'
+    end
+    object DocumentStatus: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'DocumentStatus'
+    end
+    object RefNoFrom: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'RefNoFrom'
+    end
+    object RefNoTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'RefNoTo'
+    end
+    object ItemClassId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'ItemClassId'
+    end
+    object ItemSubClassId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'ItemSubClassId'
+    end
+    object ItemGroupId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'ItemGroupId'
+    end
+    object ItemId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'ItemId'
+    end
+    object ItemCodeFrom: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'ItemCodeFrom'
+    end
+    object ItemCodeTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'ItemCodeTo'
+    end
+    object SalesRepGroupId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'SalesRepGroupId'
+    end
+    object CustomFieldFilterValue: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'CustomFieldFilterValue'
+    end
+  end
+end
