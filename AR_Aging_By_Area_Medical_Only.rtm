@@ -1,0 +1,1686 @@
+object TppReport
+  AutoStop = False
+  DataPipeline = daADOQueryDataView1.qryAgingByArea
+  PassSetting = psTwoPass
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'A/R Aging By Area - Medical Only'
+  PrinterSetup.Duplex = dpNone
+  PrinterSetup.PaperName = 'Custom'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 12700
+  PrinterSetup.mmMarginLeft = 12700
+  PrinterSetup.mmMarginRight = 12700
+  PrinterSetup.mmMarginTop = 12700
+  PrinterSetup.mmPaperHeight = 215900
+  PrinterSetup.mmPaperWidth = 279401
+  PrinterSetup.PaperSize = 256
+  Template.DatabaseSettings.Name = 'A/R Aging By Area - Medical Only'
+  Template.DatabaseSettings.NameField = 'NAME'
+  Template.DatabaseSettings.TemplateField = 'TEMPLATE'
+  Template.FileName = 
+    'C:\Users\Lenovo\Documents\GitHub\argo\AR_Aging_By_Area_Medical_O' +
+    'nly.rtm'
+  Template.Format = ftASCII
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  LanguageID = 'Default'
+  ModalPreview = False
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = True
+  ThumbnailSettings.Visible = True
+  ThumbnailSettings.DeadSpace = 30
+  ThumbnailSettings.PageHighlight.Width = 3
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.AllowExtract = True
+  PDFSettings.EncryptSettings.AllowAssemble = True
+  PDFSettings.EncryptSettings.AllowQualityPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.EncryptSettings.EncryptionType = etRC4
+  PDFSettings.FontEncoding = feAnsi
+  PDFSettings.ImageCompressionLevel = 25
+  PDFSettings.PDFAFormat = pafNone
+  PreviewFormSettings.PageBorder.mmPadding = 0
+  PreviewFormSettings.ZoomSetting = zsPageWidth
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -13
+  RTFSettings.DefaultFont.Name = 'Arial'
+  RTFSettings.DefaultFont.Style = []
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<FindText>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'ReportBuilder'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  XLSSettings.WorksheetName = 'Report'
+  Version = '19.04'
+  mmColumnWidth = 254001
+  DataPipelineName = 'qryAgingByArea'
+  object ppTitleBand1: TppTitleBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 15081
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'CompanyName'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'CompanyName'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 15240256
+      Font.Name = 'Trebuchet MS'
+      Font.Size = 14
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 6085
+      mmLeft = 92075
+      mmTop = 0
+      mmWidth = 34131
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppMemo2: TppMemo
+      DesignLayer = ppDesignLayer1
+      UserName = 'CompanyAddress'
+      KeepTogether = True
+      Anchors = [atTop, atRight]
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'CompanyAddress'
+      CharWrap = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 15240256
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      Lines.Strings = (
+        
+          'Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of ' +
+          'General Santos City, South Cotabato Philippines')
+      RemoveEmptyLines = False
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 6615
+      mmLeft = 128059
+      mmTop = 0
+      mmWidth = 62442
+      BandType = 1
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      mmLeading = 0
+    end
+    object ppLine19: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'HeaderBar'
+      Border.Color = 13061907
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Pen.Color = 13061907
+      Pen.Width = 2
+      Weight = 1.5000000000000000
+      mmHeight = 1852
+      mmLeft = 26556
+      mmTop = 7408
+      mmWidth = 163945
+      BandType = 1
+      LayerName = Foreground
+    end
+    object ppLabel19: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'CompanyContactInfo'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 
+        'support@activesystems.com '#8226' Phone 123 456 7890 '#8226' Mobile 123 456 ' +
+        '7890 '#8226' Fax 123 456 7890'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsUnderline]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 2910
+      mmLeft = 26000
+      mmTop = 24077
+      mmWidth = 24500
+      BandType = 1
+      LayerName = Foreground
+    end
+  end
+  object ppHeaderBand1: TppHeaderBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 29633
+    mmPrintPosition = 0
+    object ppLabel10: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label10'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Area'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 2000
+      mmTop = 24077
+      mmWidth = 26000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine6: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line6'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 212000
+      mmTop = 28310
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel11: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'DateRangeLabel'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'As of current date'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 10
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 0
+      mmTop = 14552
+      mmWidth = 51329
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel21: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'ReportTitle'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'A/R Aging by Area'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Verdana'
+      Font.Size = 14
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 5948
+      mmLeft = 0
+      mmTop = 2910
+      mmWidth = 50546
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel2: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label101'
+      HyperlinkEnabled = False
+      Save = True
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Current'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 108000
+      mmTop = 24077
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine1: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line1'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 108000
+      mmTop = 28310
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel3: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label3'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = '1-30'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 128800
+      mmTop = 24077
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine3: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line3'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 128800
+      mmTop = 28310
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel4: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label4'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = '31-60'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 149600
+      mmTop = 24077
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine4: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line4'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 149600
+      mmTop = 28310
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel7: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label7'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = '61-90'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 170400
+      mmTop = 24077
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine5: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line5'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 170400
+      mmTop = 28310
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel8: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label8'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = '91-120'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 191200
+      mmTop = 24077
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine7: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line7'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 191200
+      mmTop = 28310
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppVariable9: TppVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'SubTitle'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      BlankWhenZero = False
+      CalcOrder = 0
+      CalcType = veReportStart
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 11
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4763
+      mmLeft = 0
+      mmTop = 9260
+      mmWidth = 15875
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabelMedicalRow: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'LabelMedicalRow'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Over 120'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 212000
+      mmTop = 24077
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabel9: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'LabelDialysisRow1'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Total'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 232800
+      mmTop = 24077
+      mmWidth = 20800
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLabelCustomer: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'CustomerHeader'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Caption = 'Customer'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 30000
+      mmTop = 24077
+      mmWidth = 75000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppLine2: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line2'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 2000
+      mmTop = 28310
+      mmWidth = 103000
+      BandType = 0
+      LayerName = Foreground
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Background1.Brush.Style = bsClear
+    Background2.Brush.Style = bsClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 14500
+    mmPrintPosition = 0
+    object ppDBText1: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText1'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'CURRENT_BALANCE'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 108000
+      mmTop = 6085
+      mmWidth = 20800
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText2: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText2'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DAYS_1_30'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 128800
+      mmTop = 6085
+      mmWidth = 20800
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText3: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText3'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DAYS_31_60'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 149600
+      mmTop = 6085
+      mmWidth = 20800
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText4: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText4'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DAYS_61_90'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 170400
+      mmTop = 6085
+      mmWidth = 20800
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText5: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText5'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DAYS_91_120'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 191200
+      mmTop = 6085
+      mmWidth = 20800
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText6: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText6'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'DAYS_OVER_120'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 212000
+      mmTop = 6085
+      mmWidth = 20800
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText8: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText8'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'TOTAL_BALANCE'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      DisplayFormat = '#,0.00;-#,0.00;0'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 232800
+      mmTop = 6085
+      mmWidth = 20800
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText11: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText11'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      DataField = 'AREA_CODE'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Name = 'Tahoma'
+      Font.Size = 8
+      Font.Style = []
+      Transparent = True
+      Visible = False
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 2000
+      mmTop = 6085
+      mmWidth = 26000
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppDBText13: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'DBText13'
+      Border.mmPadding = 0
+      DataField = 'CUSTOMER_NAME'
+      DataPipeline = daADOQueryDataView1.qryAgingByArea
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Tahoma'
+      Font.Size = 7
+      Font.Style = [fsBold]
+      Transparent = True
+      DataPipelineName = 'qryAgingByArea'
+      mmHeight = 3440
+      mmLeft = 30000
+      mmTop = 6085
+      mmWidth = 75000
+      BandType = 4
+      LayerName = Foreground
+    end
+    object ppLine14: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'Line14'
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      Weight = 0.7500000000000000
+      mmHeight = 1323
+      mmLeft = 2000
+      mmTop = 0
+      mmWidth = 252000
+      BandType = 4
+      LayerName = Foreground
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Background.Brush.Style = bsClear
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 5027
+    mmPrintPosition = 0
+    object ppSystemVariable1: TppSystemVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'PrintTimestamp'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3831
+      mmLeft = 1058
+      mmTop = 529
+      mmWidth = 33570
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppSystemVariable2: TppSystemVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'PrintPageCount'
+      HyperlinkEnabled = False
+      Border.Weight = 1.0000000000000000
+      Border.mmPadding = 0
+      VarType = vtPageSetDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 13061907
+      Font.Name = 'Tahoma'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3831
+      mmLeft = 173663
+      mmTop = 529
+      mmWidth = 16044
+      BandType = 8
+      LayerName = Foreground
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daADOQueryDataView1: TdaADOQueryDataView
+      UserName = 'Query_qryAgingByArea'
+      Height = 352
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 224
+      AutoSearchTabOrder = 0
+      object qryAgingByArea: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'qryAgingByArea'
+        object ppField1: TppField
+          FieldAlias = 'AREA_CODE'
+          FieldName = 'AREA_CODE'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 0
+        end
+        object ppField2: TppField
+          FieldAlias = 'CUSTOMER_ID'
+          FieldName = 'CUSTOMER_ID'
+          FieldLength = 0
+          DataType = dtInteger
+          DisplayWidth = 10
+          Position = 1
+        end
+        object ppField3: TppField
+          FieldAlias = 'CUSTOMER_NAME'
+          FieldName = 'CUSTOMER_NAME'
+          FieldLength = 100
+          DisplayWidth = 100
+          Position = 2
+        end
+        object ppField4: TppField
+          FieldAlias = 'OPEN_INVOICE_COUNT'
+          FieldName = 'OPEN_INVOICE_COUNT'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 43
+          Position = 3
+        end
+        object ppField5: TppField
+          FieldAlias = 'CURRENT_BALANCE'
+          FieldName = 'CURRENT_BALANCE'
+          FieldLength = 12
+          DataType = dtDouble
+          DisplayWidth = 66
+          Position = 4
+        end
+        object ppField6: TppField
+          FieldAlias = 'DAYS_1_30'
+          FieldName = 'DAYS_1_30'
+          FieldLength = 12
+          DataType = dtDouble
+          DisplayWidth = 66
+          Position = 5
+        end
+        object ppField7: TppField
+          FieldAlias = 'DAYS_31_60'
+          FieldName = 'DAYS_31_60'
+          FieldLength = 12
+          DataType = dtDouble
+          DisplayWidth = 66
+          Position = 6
+        end
+        object ppField8: TppField
+          FieldAlias = 'DAYS_61_90'
+          FieldName = 'DAYS_61_90'
+          FieldLength = 12
+          DataType = dtDouble
+          DisplayWidth = 66
+          Position = 7
+        end
+        object ppField9: TppField
+          FieldAlias = 'DAYS_91_120'
+          FieldName = 'DAYS_91_120'
+          FieldLength = 12
+          DataType = dtDouble
+          DisplayWidth = 66
+          Position = 8
+        end
+        object ppField10: TppField
+          FieldAlias = 'DAYS_OVER_120'
+          FieldName = 'DAYS_OVER_120'
+          FieldLength = 12
+          DataType = dtDouble
+          DisplayWidth = 66
+          Position = 9
+        end
+        object ppField11: TppField
+          FieldAlias = 'UNDATED_BALANCE'
+          FieldName = 'UNDATED_BALANCE'
+          FieldLength = 12
+          DataType = dtDouble
+          DisplayWidth = 66
+          Position = 10
+        end
+        object ppField12: TppField
+          FieldAlias = 'TOTAL_BALANCE'
+          FieldName = 'TOTAL_BALANCE'
+          FieldLength = 12
+          DataType = dtDouble
+          DisplayWidth = 66
+          Position = 11
+        end
+      end
+      object daSQL1: TdaSQL
+        DatabaseName = 'ADOConnection'
+        DatabaseType = dtMySQL
+        DataPipelineName = 'qryAgingByArea'
+        EditSQLAsText = True
+        IsCaseSensitive = True
+        LinkColor = clMaroon
+        LinkType = ltManualSQL
+        MaxSQLFieldAliasLength = 0
+        SQLText.Strings = (
+          'WITH invoice_lines AS ('
+          '    SELECT'
+          '        m.AREA_CODE,'
+          '        c.ID AS CUSTOMER_ID,'
+          '        c.NAME AS CUSTOMER_NAME,'
+          '        i.ID AS INVOICE_ID,'
+          '        i.DATE AS INVOICE_DATE,'
+          '        i.DUE_DATE,'
+          '        i.BALANCE_DUE,'
+          '        ii.ID AS INVOICE_ITEM_ID,'
+          '        ii.ITEM_ID,'
+          '        ii.AMOUNT AS LINE_AMOUNT,'
+          '        COALESCE(it.CUSTOM_FIELD1, '#39#39') AS ITEM_MASTER_CLASS,'
+          '        COALESCE(it.GROUP_ID, 0) AS ITEM_GROUP_ID,'
+          '        COALESCE(it.SUB_CLASS_ID, 0) AS ITEM_SUB_CLASS_ID,'
+          '        UPPER(TRIM(COALESCE(cl.NAME, '#39#39'))) AS INVOICE_CLASS,'
+          '        CASE'
+          
+            '            /* ActiveONE invoice Class is authoritative when pop' +
+            'ulated. */'
+          '            WHEN UPPER(TRIM(COALESCE(cl.NAME, '#39#39'))) = '#39'MEDICAL'#39
+          '                THEN '#39'MEDICAL'#39
+          '            WHEN UPPER(TRIM(COALESCE(cl.NAME, '#39#39'))) = '#39'DIALYSIS'#39
+          '                THEN '#39'DIALYSIS'#39
+          ''
+          
+            '            /* Item-level classification fallback when invoice C' +
+            'lass is blank. */'
+          
+            '            WHEN UPPER(TRIM(COALESCE(it.CUSTOM_FIELD1, '#39#39'))) = '#39 +
+            'MEDICAL'#39
+          '                THEN '#39'MEDICAL'#39
+          
+            '            WHEN UPPER(TRIM(COALESCE(it.CUSTOM_FIELD1, '#39#39'))) = '#39 +
+            'DIALYSIS'#39
+          '                THEN '#39'DIALYSIS'#39
+          ''
+          '            /* Explicit item mappings fallback. */'
+          
+            '            WHEN ii.ITEM_ID IN (1441, 1627, 1468, 58, 165, 1269,' +
+            ' 1473)'
+          '                THEN '#39'MEDICAL'#39
+          
+            '            WHEN ii.ITEM_ID IN (1492, 468, 866, 1622, 862, 1463,' +
+            ' 1465, 412, 1625, 1608)'
+          '                THEN '#39'DIALYSIS'#39
+          ''
+          '            /* Generic item group fallback. */'
+          '            WHEN COALESCE(it.GROUP_ID, 0) = 4'
+          '             AND COALESCE(it.SUB_CLASS_ID, 0) = 11'
+          '                THEN '#39'MEDICAL'#39
+          '            ELSE '#39'UNCLASSIFIED'#39
+          '        END AS ITEM_CLASS'
+          '    FROM invoice i'
+          '    INNER JOIN contact c'
+          '        ON c.ID = i.CUSTOMER_ID'
+          '    INNER JOIN customer_area_mapping m'
+          '        ON m.CUSTOMER_ID = i.CUSTOMER_ID'
+          '    INNER JOIN invoice_items ii'
+          '        ON ii.INVOICE_ID = i.ID'
+          '    LEFT JOIN item it'
+          '        ON it.ID = ii.ITEM_ID'
+          '    LEFT JOIN class cl'
+          '        ON cl.ID = i.CLASS_ID'
+          '    WHERE i.BALANCE_DUE > 0'
+          '      AND i.CLASS_ID = 1'
+          '      AND ('
+          '            NULLIF(:CustomerId, '#39'Null'#39') IS NULL'
+          '            OR i.CUSTOMER_ID = CAST(:CustomerId AS UNSIGNED)'
+          '          )'
+          '), allocated_lines AS ('
+          '    SELECT'
+          '        il.*,'
+          '        CASE'
+          
+            '            WHEN SUM(ABS(il.LINE_AMOUNT)) OVER (PARTITION BY il.' +
+            'INVOICE_ID) > 0'
+          '                THEN il.BALANCE_DUE * ABS(il.LINE_AMOUNT)'
+          
+            '                     / SUM(ABS(il.LINE_AMOUNT)) OVER (PARTITION ' +
+            'BY il.INVOICE_ID)'
+          '            ELSE il.BALANCE_DUE'
+          '                 / COUNT(*) OVER (PARTITION BY il.INVOICE_ID)'
+          '        END AS ALLOCATED_BALANCE'
+          '    FROM invoice_lines il'
+          '), aging_lines AS ('
+          '    SELECT'
+          '        AREA_CODE,'
+          '        CUSTOMER_ID,'
+          '        CUSTOMER_NAME,'
+          '        INVOICE_ID,'
+          '        ITEM_CLASS,'
+          '        ALLOCATED_BALANCE,'
+          '        CASE'
+          '            WHEN DUE_DATE IS NULL THEN NULL'
+          
+            '            ELSE DATEDIFF(STR_TO_DATE(:DateTo, '#39'%m/%d/%Y'#39'), DUE_' +
+            'DATE)'
+          '        END AS DAYS_PAST_DUE'
+          '    FROM allocated_lines'
+          '), customer_category_rows AS ('
+          '    SELECT'
+          '        AREA_CODE,'
+          '        CUSTOMER_ID,'
+          '        CASE'
+          '            WHEN ITEM_CLASS = '#39'MEDICAL'#39' THEN '#39'   MEDICAL'#39
+          '            WHEN ITEM_CLASS = '#39'DIALYSIS'#39' THEN '#39'   DIALYSIS'#39
+          '            ELSE '#39'   UNCLASSIFIED'#39
+          '        END AS CUSTOMER_NAME,'
+          '        0 AS OPEN_INVOICE_COUNT,'
+          
+            '        SUM(CASE WHEN DAYS_PAST_DUE IS NOT NULL AND DAYS_PAST_DU' +
+            'E <= 0'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS CURRENT_B' +
+            'ALANCE,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE BETWEEN 1 AND 30'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_1_30' +
+            ','
+          '        SUM(CASE WHEN DAYS_PAST_DUE BETWEEN 31 AND 60'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_31_6' +
+            '0,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE BETWEEN 61 AND 90'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_61_9' +
+            '0,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE BETWEEN 91 AND 120'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_91_1' +
+            '20,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE > 120'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_OVER' +
+            '_120,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE IS NULL'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS UNDATED_B' +
+            'ALANCE,'
+          '        SUM(ALLOCATED_BALANCE) AS TOTAL_BALANCE,'
+          '        2 AS SORT_ORDER,'
+          '        ITEM_CLASS AS CATEGORY_SORT'
+          '    FROM aging_lines'
+          '    GROUP BY AREA_CODE, CUSTOMER_ID, ITEM_CLASS'
+          '), customer_header_rows AS ('
+          '    SELECT'
+          '        AREA_CODE,'
+          '        CUSTOMER_ID,'
+          '        CUSTOMER_NAME,'
+          '        COUNT(DISTINCT INVOICE_ID) AS OPEN_INVOICE_COUNT,'
+          '        CAST(NULL AS DECIMAL(18,4)) AS CURRENT_BALANCE,'
+          '        CAST(NULL AS DECIMAL(18,4)) AS DAYS_1_30,'
+          '        CAST(NULL AS DECIMAL(18,4)) AS DAYS_31_60,'
+          '        CAST(NULL AS DECIMAL(18,4)) AS DAYS_61_90,'
+          '        CAST(NULL AS DECIMAL(18,4)) AS DAYS_91_120,'
+          '        CAST(NULL AS DECIMAL(18,4)) AS DAYS_OVER_120,'
+          '        CAST(NULL AS DECIMAL(18,4)) AS UNDATED_BALANCE,'
+          '        CAST(NULL AS DECIMAL(18,4)) AS TOTAL_BALANCE,'
+          '        1 AS SORT_ORDER,'
+          '        '#39#39' AS CATEGORY_SORT'
+          '    FROM aging_lines'
+          '    GROUP BY AREA_CODE, CUSTOMER_ID, CUSTOMER_NAME'
+          '), customer_total_rows AS ('
+          '    SELECT'
+          '        AREA_CODE,'
+          '        CUSTOMER_ID,'
+          '        '#39'   TOTAL'#39' AS CUSTOMER_NAME,'
+          '        0 AS OPEN_INVOICE_COUNT,'
+          
+            '        SUM(CASE WHEN DAYS_PAST_DUE IS NOT NULL AND DAYS_PAST_DU' +
+            'E <= 0'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS CURRENT_B' +
+            'ALANCE,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE BETWEEN 1 AND 30'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_1_30' +
+            ','
+          '        SUM(CASE WHEN DAYS_PAST_DUE BETWEEN 31 AND 60'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_31_6' +
+            '0,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE BETWEEN 61 AND 90'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_61_9' +
+            '0,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE BETWEEN 91 AND 120'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_91_1' +
+            '20,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE > 120'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS DAYS_OVER' +
+            '_120,'
+          '        SUM(CASE WHEN DAYS_PAST_DUE IS NULL'
+          
+            '                 THEN ALLOCATED_BALANCE ELSE 0 END) AS UNDATED_B' +
+            'ALANCE,'
+          '        SUM(ALLOCATED_BALANCE) AS TOTAL_BALANCE,'
+          '        3 AS SORT_ORDER,'
+          '        '#39#39' AS CATEGORY_SORT'
+          '    FROM aging_lines'
+          '    GROUP BY AREA_CODE, CUSTOMER_ID'
+          '), customer_rows AS ('
+          '    SELECT * FROM customer_header_rows'
+          '    UNION ALL'
+          '    SELECT * FROM customer_category_rows'
+          '    UNION ALL'
+          '    SELECT * FROM customer_total_rows'
+          '), area_rows AS ('
+          '    SELECT'
+          '        m.AREA_CODE,'
+          '        CAST(NULL AS SIGNED) AS CUSTOMER_ID,'
+          '        '#39'AREA TOTAL'#39' AS CUSTOMER_NAME,'
+          '        COUNT(DISTINCT i.ID) AS OPEN_INVOICE_COUNT,'
+          '        SUM(CASE WHEN i.DUE_DATE IS NOT NULL'
+          
+            '                  AND DATEDIFF(STR_TO_DATE(:DateTo, '#39'%m/%d/%Y'#39'),' +
+            ' i.DUE_DATE) <= 0'
+          
+            '                 THEN i.BALANCE_DUE ELSE 0 END) AS CURRENT_BALAN' +
+            'CE,'
+          '        SUM(CASE WHEN i.DUE_DATE IS NOT NULL'
+          
+            '                  AND DATEDIFF(STR_TO_DATE(:DateTo, '#39'%m/%d/%Y'#39'),' +
+            ' i.DUE_DATE) BETWEEN 1 AND 30'
+          '                 THEN i.BALANCE_DUE ELSE 0 END) AS DAYS_1_30,'
+          '        SUM(CASE WHEN i.DUE_DATE IS NOT NULL'
+          
+            '                  AND DATEDIFF(STR_TO_DATE(:DateTo, '#39'%m/%d/%Y'#39'),' +
+            ' i.DUE_DATE) BETWEEN 31 AND 60'
+          '                 THEN i.BALANCE_DUE ELSE 0 END) AS DAYS_31_60,'
+          '        SUM(CASE WHEN i.DUE_DATE IS NOT NULL'
+          
+            '                  AND DATEDIFF(STR_TO_DATE(:DateTo, '#39'%m/%d/%Y'#39'),' +
+            ' i.DUE_DATE) BETWEEN 61 AND 90'
+          '                 THEN i.BALANCE_DUE ELSE 0 END) AS DAYS_61_90,'
+          '        SUM(CASE WHEN i.DUE_DATE IS NOT NULL'
+          
+            '                  AND DATEDIFF(STR_TO_DATE(:DateTo, '#39'%m/%d/%Y'#39'),' +
+            ' i.DUE_DATE) BETWEEN 91 AND 120'
+          '                 THEN i.BALANCE_DUE ELSE 0 END) AS DAYS_91_120,'
+          '        SUM(CASE WHEN i.DUE_DATE IS NOT NULL'
+          
+            '                  AND DATEDIFF(STR_TO_DATE(:DateTo, '#39'%m/%d/%Y'#39'),' +
+            ' i.DUE_DATE) > 120'
+          
+            '                 THEN i.BALANCE_DUE ELSE 0 END) AS DAYS_OVER_120' +
+            ','
+          '        SUM(CASE WHEN i.DUE_DATE IS NULL'
+          
+            '                 THEN i.BALANCE_DUE ELSE 0 END) AS UNDATED_BALAN' +
+            'CE,'
+          '        SUM(i.BALANCE_DUE) AS TOTAL_BALANCE,'
+          '        4 AS SORT_ORDER,'
+          '        '#39#39' AS CATEGORY_SORT'
+          '    FROM invoice i'
+          '    INNER JOIN customer_area_mapping m'
+          '        ON m.CUSTOMER_ID = i.CUSTOMER_ID'
+          '    WHERE i.BALANCE_DUE > 0'
+          '      AND i.CLASS_ID = 1'
+          '      AND ('
+          '            NULLIF(:CustomerId, '#39'Null'#39') IS NULL'
+          '            OR i.CUSTOMER_ID = CAST(:CustomerId AS UNSIGNED)'
+          '          )'
+          '    GROUP BY m.AREA_CODE'
+          '), grand_row AS ('
+          '    SELECT'
+          '        '#39'GRAND TOTAL'#39' AS AREA_CODE,'
+          '        CAST(NULL AS SIGNED) AS CUSTOMER_ID,'
+          '        '#39'GRAND TOTAL'#39' AS CUSTOMER_NAME,'
+          '        SUM(OPEN_INVOICE_COUNT) AS OPEN_INVOICE_COUNT,'
+          '        SUM(CURRENT_BALANCE) AS CURRENT_BALANCE,'
+          '        SUM(DAYS_1_30) AS DAYS_1_30,'
+          '        SUM(DAYS_31_60) AS DAYS_31_60,'
+          '        SUM(DAYS_61_90) AS DAYS_61_90,'
+          '        SUM(DAYS_91_120) AS DAYS_91_120,'
+          '        SUM(DAYS_OVER_120) AS DAYS_OVER_120,'
+          '        SUM(UNDATED_BALANCE) AS UNDATED_BALANCE,'
+          '        SUM(TOTAL_BALANCE) AS TOTAL_BALANCE,'
+          '        5 AS SORT_ORDER,'
+          '        '#39#39' AS CATEGORY_SORT'
+          '    FROM area_rows'
+          ')'
+          'SELECT'
+          '    AREA_CODE,'
+          '    CUSTOMER_ID,'
+          '    CUSTOMER_NAME,'
+          '    OPEN_INVOICE_COUNT,'
+          '    CURRENT_BALANCE,'
+          '    DAYS_1_30,'
+          '    DAYS_31_60,'
+          '    DAYS_61_90,'
+          '    DAYS_91_120,'
+          '    DAYS_OVER_120,'
+          '    UNDATED_BALANCE,'
+          '    TOTAL_BALANCE'
+          'FROM ('
+          '    SELECT * FROM customer_rows'
+          '    UNION ALL'
+          '    SELECT * FROM area_rows'
+          '    UNION ALL'
+          '    SELECT * FROM grand_row'
+          ') report_rows'
+          'ORDER BY'
+          '    CASE AREA_CODE'
+          '        WHEN '#39'DAVAO'#39' THEN 1'
+          '        WHEN '#39'GENSAN'#39' THEN 2'
+          '        WHEN '#39'NORTH'#39' THEN 3'
+          '        WHEN '#39'SOUTH'#39' THEN 4'
+          '        WHEN '#39'GRAND TOTAL'#39' THEN 5'
+          '        ELSE 6'
+          '    END,'
+          '    CASE WHEN SORT_ORDER = 4 THEN 1'
+          '         WHEN SORT_ORDER = 5 THEN 2'
+          '         ELSE 0 END,'
+          '    CUSTOMER_ID,'
+          '    SORT_ORDER,'
+          '    CASE CATEGORY_SORT'
+          '        WHEN '#39'MEDICAL'#39' THEN 1'
+          '        WHEN '#39'DIALYSIS'#39' THEN 2'
+          '        ELSE 0'
+          '    END;'
+          '')
+        SQLType = sqSQL2
+        object daField1: TdaField
+          Alias = 'AREA_CODE'
+          DisplayWidth = 30
+          FieldAlias = 'AREA_CODE'
+          FieldLength = 30
+          FieldName = 'AREA_CODE'
+          SQLFieldName = 'AREA_CODE'
+        end
+        object daField2: TdaField
+          Alias = 'CUSTOMER_ID'
+          DataType = dtInteger
+          DisplayWidth = 10
+          FieldAlias = 'CUSTOMER_ID'
+          FieldLength = 0
+          FieldName = 'CUSTOMER_ID'
+          SQLFieldName = 'CUSTOMER_ID'
+        end
+        object daField3: TdaField
+          Alias = 'CUSTOMER_NAME'
+          DisplayWidth = 100
+          FieldAlias = 'CUSTOMER_NAME'
+          FieldLength = 100
+          FieldName = 'CUSTOMER_NAME'
+          SQLFieldName = 'CUSTOMER_NAME'
+        end
+        object daField4: TdaField
+          Alias = 'OPEN_INVOICE_COUNT'
+          DataType = dtDouble
+          DisplayWidth = 43
+          FieldAlias = 'OPEN_INVOICE_COUNT'
+          FieldLength = 0
+          FieldName = 'OPEN_INVOICE_COUNT'
+          SQLFieldName = 'OPEN_INVOICE_COUNT'
+        end
+        object daField5: TdaField
+          Alias = 'CURRENT_BALANCE'
+          DataType = dtDouble
+          DisplayWidth = 66
+          FieldAlias = 'CURRENT_BALANCE'
+          FieldLength = 12
+          FieldName = 'CURRENT_BALANCE'
+          SQLFieldName = 'CURRENT_BALANCE'
+        end
+        object daField6: TdaField
+          Alias = 'DAYS_1_30'
+          DataType = dtDouble
+          DisplayWidth = 66
+          FieldAlias = 'DAYS_1_30'
+          FieldLength = 12
+          FieldName = 'DAYS_1_30'
+          SQLFieldName = 'DAYS_1_30'
+        end
+        object daField7: TdaField
+          Alias = 'DAYS_31_60'
+          DataType = dtDouble
+          DisplayWidth = 66
+          FieldAlias = 'DAYS_31_60'
+          FieldLength = 12
+          FieldName = 'DAYS_31_60'
+          SQLFieldName = 'DAYS_31_60'
+        end
+        object daField8: TdaField
+          Alias = 'DAYS_61_90'
+          DataType = dtDouble
+          DisplayWidth = 66
+          FieldAlias = 'DAYS_61_90'
+          FieldLength = 12
+          FieldName = 'DAYS_61_90'
+          SQLFieldName = 'DAYS_61_90'
+        end
+        object daField9: TdaField
+          Alias = 'DAYS_91_120'
+          DataType = dtDouble
+          DisplayWidth = 66
+          FieldAlias = 'DAYS_91_120'
+          FieldLength = 12
+          FieldName = 'DAYS_91_120'
+          SQLFieldName = 'DAYS_91_120'
+        end
+        object daField10: TdaField
+          Alias = 'DAYS_OVER_120'
+          DataType = dtDouble
+          DisplayWidth = 66
+          FieldAlias = 'DAYS_OVER_120'
+          FieldLength = 12
+          FieldName = 'DAYS_OVER_120'
+          SQLFieldName = 'DAYS_OVER_120'
+        end
+        object daField11: TdaField
+          Alias = 'UNDATED_BALANCE'
+          DataType = dtDouble
+          DisplayWidth = 66
+          FieldAlias = 'UNDATED_BALANCE'
+          FieldLength = 12
+          FieldName = 'UNDATED_BALANCE'
+          SQLFieldName = 'UNDATED_BALANCE'
+        end
+        object daField12: TdaField
+          Alias = 'TOTAL_BALANCE'
+          DataType = dtDouble
+          DisplayWidth = 66
+          FieldAlias = 'TOTAL_BALANCE'
+          FieldLength = 12
+          FieldName = 'TOTAL_BALANCE'
+          SQLFieldName = 'TOTAL_BALANCE'
+        end
+      end
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    object raProgramInfo1: TraProgramInfo
+      raClassName = 'TraProgram'
+      raProgram.ChildType = 21
+      raProgram.ProgramName = 'FormatReportTitle'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure FormatReportTitle;'#13#10'var'#13#10'  S: string;'#13#10'  Sep: string;'#13 +
+        #10'  ChrWidth: Single;'#13#10'  CoNameWidth: Single;'#13#10'  CoNameLeft: Sing' +
+        'le;'#13#10'  CoContactInfoWidth: Single;'#13#10'  CoContactInfoLeft: Single;' +
+        #13#10'  BandWidth: Single;'#13#10'  ByPass: Boolean;'#13#10'begin'#13#10'  BandWidth :' +
+        '= (CompanyAddress.Left + CompanyAddress.Width);'#13#10'  S := Report.P' +
+        'arameters['#39'CompanyName'#39'];'#13#10'  if not ByPass then'#13#10'  begin'#13#10'    Ch' +
+        'rWidth := CompanyName.Width / Length(CompanyName.Text);'#13#10'    CoN' +
+        'ameWidth:= ChrWidth * (Length(S) - 1);'#13#10'    CoNameLeft := Compan' +
+        'yName.Left + (CompanyName.Width - CoNameWidth);'#13#10'  end;'#13#10'  Heade' +
+        'rBar.Left := CoNameLeft;'#13#10'  HeaderBar.Width := BandWidth - Heade' +
+        'rBar.Left;'#13#10'  CompanyName.Text := S;'#13#10'  '#13#10'  CompanyAddress.Lines' +
+        '.Clear;'#13#10'  CompanyAddress.Lines.Add(Report.Parameters['#39'CompanyAd' +
+        'dress'#39']);'#13#10'  S := '#39#39';'#13#10'  Sep := '#39' '#8226' '#39';'#13#10'  if Report.Parameters['#39 +
+        'CompanyEmailAddress'#39'] <> '#39#39' then'#13#10'    S := Report.Parameters['#39'Co' +
+        'mpanyEmailAddress'#39'];'#13#10'  if Report.Parameters['#39'CompanyPhoneNo'#39'] <' +
+        '> '#39#39' then'#13#10'  begin'#13#10'    if S <> '#39#39' then S := S + Sep;'#13#10'    S := ' +
+        'S + '#39'Phone '#39' + Report.Parameters['#39'CompanyPhoneNo'#39'];'#13#10'  end;'#13#10'  i' +
+        'f Report.Parameters['#39'CompanyMobileNo'#39'] <> '#39#39' then'#13#10'  begin'#13#10'    ' +
+        'if S <> '#39#39' then S := S + Sep;'#13#10'    S := S + '#39'Mobile '#39' +  Report.' +
+        'Parameters['#39'CompanyMobileNo'#39'];'#13#10'  end;'#13#10'  if Report.Parameters['#39 +
+        'CompanyFaxNo'#39'] <> '#39#39' then'#13#10'  begin'#13#10'    if S <> '#39#39' then S := S +' +
+        ' Sep;'#13#10'    S := S + '#39'Fax '#39' +  Report.Parameters['#39'CompanyFaxNo'#39'];' +
+        #13#10'  end;'#13#10'  if Report.Parameters['#39'CompanyTin'#39'] <> '#39#39' then'#13#10'  beg' +
+        'in'#13#10'    if S <> '#39#39' then S := S + Sep;'#13#10'    S := S + '#39'Tin '#39' +  Re' +
+        'port.Parameters['#39'CompanyTin'#39'];'#13#10'  end;'#13#10'  CompanyContactInfo.Tex' +
+        't := S;'#13#10'  '#13#10'  if not ByPass then'#13#10'  begin'#13#10'    ChrWidth := Comp' +
+        'anyContactInfo.Width / Length(CompanyContactInfo.Text);'#13#10'    CoC' +
+        'ontactInfoWidth := ChrWidth * (Length(S) - 1);'#13#10'    CoContactInf' +
+        'oLeft := CompanyContactInfo.Left + '#13#10'      (CompanyContactInfo.W' +
+        'idth - CoContactInfoWidth);'#13#10'  end;'#13#10'  if CoContactInfoLeft < He' +
+        'aderBar.Left then'#13#10'  begin'#13#10'    HeaderBar.Left := CoContactInfoL' +
+        'eft;'#13#10'    HeaderBar.Width := BandWidth - HeaderBar.Left;'#13#10'  end;' +
+        #13#10'  '#13#10'  ByPass := True;'#13#10'end;'#13#10
+    end
+    object raProgramInfo2: TraProgramInfo
+      raClassName = 'TraProgram'
+      raProgram.ChildType = 21
+      raProgram.ProgramName = 'FormatDateRange'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure FormatDateRange;'#13#10'begin'#13#10'  if Report.Parameters.InList' +
+        '('#39'DateTo'#39') and (Report.Parameters['#39'DateTo'#39'] <> '#39#39') then'#13#10'    Dat' +
+        'eRangeLabel.Text := '#39'As of '#39' + Report.Parameters['#39'DateTo'#39']'#13#10'  el' +
+        'se'#13#10'    DateRangeLabel.Text := '#39'All transactions'#39';'#13#10'end;'#13#10
+    end
+    object raProgramInfo3: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'TitleBeforePrint'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure TitleBeforePrint;'#13#10'begin'#13#10'  FormatReportTitle;'#13#10'  Form' +
+        'atDateRange;'#13#10'end;'#13#10
+      raProgram.ComponentName = 'Title'
+      raProgram.EventName = 'BeforePrint'
+      raProgram.EventID = 24
+    end
+    object raProgramInfo6: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'SubTitleOnCalc'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure SubTitleOnCalc(var Value: Variant);'#13#10'begin'#13#10'  if Repor' +
+        't.Parameters.InList('#39'SubTitle'#39') then'#13#10'    Value := Report.Parame' +
+        'ters['#39'SubTitle'#39']'#13#10'  else'#13#10'    Value := '#39'All Records'#39';'#13#10'end;'#13#10
+      raProgram.ComponentName = 'SubTitle'
+      raProgram.EventName = 'OnCalc'
+      raProgram.EventID = 33
+    end
+    object raProgramInfo7: TraProgramInfo
+      raClassName = 'TraEventHandler'
+      raProgram.ProgramName = 'DetailBeforePrint'
+      raProgram.ProgramType = ttProcedure
+      raProgram.Source = 
+        'procedure DetailBeforePrint;'#13#10'begin'#13#10'  DBText11.Visible := not (' +
+        '(qryAgingByArea['#39'CUSTOMER_NAME'#39'] = '#39'MEDICAL'#39') or (qryAgingByArea' +
+        '['#39'CUSTOMER_NAME'#39'] = '#39'DIALYSIS'#39') or (Trim(qryAgingByArea['#39'CUSTOME' +
+        'R_NAME'#39']) = '#39'TOTAL'#39') or (qryAgingByArea['#39'CUSTOMER_NAME'#39'] = '#39'AREA' +
+        ' TOTAL'#39') or (qryAgingByArea['#39'CUSTOMER_NAME'#39'] = '#39'GRAND TOTAL'#39'));'#13 +
+        #10'  Line14.Visible := (qryAgingByArea['#39'CUSTOMER_NAME'#39'] = '#39'GRAND T' +
+        'OTAL'#39');'#13#10'end;'#13#10
+      raProgram.ComponentName = 'Detail'
+      raProgram.EventName = 'BeforePrint'
+      raProgram.EventID = 24
+    end
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object CompanyName: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"Argo Distributors, Inc."'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Argo Distributors, Inc.'
+      UserName = 'Parameter1'
+    end
+    object CompanyAddress: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 
+        '"Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of' +
+        ' General Santos City, South Cotabato Philippines"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 
+        'Lot 50 Block 3 Villa Consuelo subd., City Heights, 9500 City of ' +
+        'General Santos City, South Cotabato Philippines'
+    end
+    object CompanyPhoneNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"(083) 552-3917"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '(083) 552-3917'
+      UserName = 'CompanyPhoneNo'
+    end
+    object CompanyMobileNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyMobileNo'
+    end
+    object CompanyFaxNo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyFaxNo'
+    end
+    object CompanyEmailAddress: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'CompanyEmailAddress'
+    end
+    object CompanyTin: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '278-858-657-00000'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '278-858-657-00000'
+      UserName = 'CompanyTin'
+    end
+    object RangeTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '46343'
+      DataType = dtDateTime
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 46343d
+      UserName = 'RangeTo'
+    end
+    object DateFrom: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'DateFrom'
+    end
+    object DateTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '11/17/2026'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '11/17/2026'
+      UserName = 'DateTo'
+    end
+    object LocationId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'LocationId'
+    end
+    object LocationGroupId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'LocationGroupId'
+    end
+    object DocumentType: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'DocumentType'
+    end
+    object CustomerGroupId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'CustomerGroupId'
+    end
+    object CustomerId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'CustomerId'
+    end
+    object SalesRepId: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'SalesRepId'
+    end
+    object DocumentStatus: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'DocumentStatus'
+    end
+    object RefNoFrom: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'RefNoFrom'
+    end
+    object RefNoTo: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = 'Null'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'Null'
+      UserName = 'RefNoTo'
+    end
+    object SubTitle: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"All locations"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'All locations'
+      UserName = 'SubTitle1'
+    end
+  end
+end
